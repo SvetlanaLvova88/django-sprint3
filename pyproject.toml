@@ -7,8 +7,6 @@ build-backend = "setuptools.build_meta"
 name = "django-sprint3"
 version = "0.1.0"
 
-[tool.setuptools]
-package-dir = {"" = "blogicum"}
-
 [tool.setuptools.packages.find]
-where = ["blogicum"]
+where = ["."]
+include = ["blogicum*", "blog*", "pages*"]
